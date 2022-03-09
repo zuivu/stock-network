@@ -133,3 +133,4 @@ dmypy.json
 *.pdf
 *.gexf
 *.gephi
+*.txt
