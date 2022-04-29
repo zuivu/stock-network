@@ -32,8 +32,14 @@ def get_stock_close_price(source, col_name, start_day, end_day, result_csv_dir):
 
 if __name__ == "__main__":
     start_day = "23 Mar, 2020"
-    end_day = "03 Jan, 2022"
-    source = "https://en.wikipedia.org/wiki/List_of_S%26P_400_companies" # "https://en.wikipedia.org/wiki/List_of_S%26P_500_companies"
-    col_name = "Ticker symbol" # "Symbol"
-    download_data_name = "sp400-info.csv"
+    end_day = "22 April, 2022"
+    #SP500
+    source = "https://en.wikipedia.org/wiki/List_of_S%26P_500_companies"
+    col_name = "Symbol"
+    download_data_name = "sp500-info.csv"
+
+    # SP400
+    # source = "https://en.wikipedia.org/wiki/List_of_S%26P_400_companies"
+    #col_name = "Ticker symbol"  # change to "Symbol" when download sp500
+    #download_data_name = "sp400-info.csv"
     stock_df = get_stock_close_price(source, col_name, start_day, end_day, download_data_name)
